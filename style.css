@@ -1,0 +1,44 @@
+body {
+    background-color: #1e1e1e;
+    color: #cfcfcf;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    margin-bottom: 2em;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+#projects {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#projects th {
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #404040;
+}
+
+#projects td, #projects th {
+    padding: 10px;
+    border: 1px solid #606060;
+}
+
+#projects tr:nth-child(even) {
+    background-color: #2e2e2e;
+}
+
+#projects a {
+    color: #63a69f;
+    text-decoration: none;
+}
+
+#projects a:hover {
+    text-decoration: underline;
+}
