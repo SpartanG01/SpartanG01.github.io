@@ -42,3 +42,14 @@ h1 {
 #projects a:hover {
     text-decoration: underline;
 }
+@media screen and (max-width: 1024px) {
+    #projects {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #projects {
+        width: 80%;
+    }
+}
