@@ -1,7 +1,23 @@
 body {
-    background-color: #1e1e1e;
+	background: linear-gradient(145deg, #3bcea2 0%, #4f89f8 20%, #751ae0 80%, #ea16e4 100%);
+	background-size: 400% 400%;
+	animation: gradient 12s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
     color: #cfcfcf;
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
 }
 
 header {
@@ -19,29 +35,34 @@ h1 {
     border-collapse: collapse;
 }
 
+#projects {
+  background: linear-gradient(130deg, #01253d 0%, #014b69 30%,  #2dfbf9 50%, #014b69 70%, #01253d 100%);
+}
+
 #projects th {
     text-transform: uppercase;
     color: #ffffff;
-    background-color: #404040;
 }
 
 #projects td, #projects th {
     padding: 10px;
-    border: 1px solid #606060;
+    border: 1px solid #000000;
 }
 
-#projects tr:nth-child(even) {
-    background-color: #2e2e2e;
+#projects td, #projects tr {
+  color: #30FFFFCC;
 }
 
 #projects a {
-    color: #63a69f;
-    text-decoration: none;
+    color: #FFFF00CC;
+    text-decoration: underline;
 }
 
 #projects a:hover {
+    color: #8800FF;
     text-decoration: underline;
 }
+
 @media screen and (max-width: 1024px) {
     #projects {
         width: 50%;
